@@ -2,9 +2,11 @@ package org.example.car;
 
 public class SamochodMain {
     public static void main(String[] args) {
-        Integer km = 20;
+        Integer test = 10;
+        Double fff = test.doubleValue();
+        Double km = 20.0;
         String nazwa1 = "Testowy Samochód";
-       Samochod car = new Samochod("Opel", 45, 8);
+       Samochod car = new Samochod("Opel", 45.0, 8.0);
         System.out.println(car.zmienNazwe(nazwa1));
         System.out.println("Samochód przejechał: " + car.jedz(km) + "km.");
         System.out.println("Samochód spalił: " + car.ileLposzlo(car.spalanie, km));
