@@ -1,5 +1,8 @@
 package org.example;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Petla {
     public static void main(String[] args) {
         int counter = 0;
@@ -26,7 +29,35 @@ public class Petla {
         System.out.println(uzytkownicy[2]);
 
         String[] strings = new String[3];
+        strings[0] = "Bartek";
+        strings[1] = "Ola";
+        strings[2] = "Magda";
         String[] strings1 = new String[strings.length - 1];
+        System.out.println(strings1.length);
+        for (String element : strings1)
+            System.out.println(element);
+
+        String [] strings2 = Arrays.copyOf(strings, strings.length -1);
+        for (String element1 : strings2 )
+            System.out.println(element1);
+
+        strings2[0] = "Kasia";
+        strings2[1] = "ola";
+
+        System.out.println(strings2[0]);
+        for (String element2 : strings2 )
+            System.out.println(element2);
+
+
+
+
+    }
+
+}
+
+
+
+
 
 
         /*
@@ -88,5 +119,5 @@ public class Petla {
 
         Liczby Fibonacciego to ciąg, w którym każda liczba jest sumą dwóch poprzednich liczb. Dwie pierwsze liczby w tym ciągu to 0 i 1.
          */
-    }
-}
+
+
